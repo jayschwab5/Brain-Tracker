@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain State Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Brain State Survey</h1>
+        <form id="brainSurvey">
+            <label for="name">First Name and Last Initial:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="brainState">What was it like in your brain this week at work?</label>
+            <input type="range" id="brainState" name="brainState" min="1" max="100" value="50">
+            
+            <div class="image-container">
+                <img id="brainImage" src="brain-image.jpg" alt="Brain State">
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
